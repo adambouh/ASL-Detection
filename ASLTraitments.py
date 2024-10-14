@@ -104,7 +104,7 @@ def extract_landmarks(image, results, mpDraw, mpHands):
             # Boucle à travers chaque landmark
             for landmark in landmarks:
                 # Stockage des coordonnées des landmarks dans le tableau
-                landmarks_row.extend([landmark.x*w, landmark.y*h, landmark.z*c])
+                landmarks_row.extend([landmark.x*w, landmark.y*h])
                 
                 # Dessin d'un cercle pour représenter chaque landmark sur l'image
                 cx, cy = int(landmark.x * w), int(landmark.y * h)
